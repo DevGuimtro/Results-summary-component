@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-global {
+  display: flex;
+  box-shadow: 1px 1px 10px lightgray;
+  border-radius: 25px;
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  min-height: 400px;
+  max-width: 280px;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 25px;
+}
+
+.result-text {
+  font-size: 1.3rem;
+  color: hsla(222, 100%, 96%, 0.79);
+  font-weight: 500;
+}
+
+.center-result {
+  min-width: 150px;
+  background-image: linear-gradient(
+    rgb(78, 33, 202),
+    hsla(241, 72%, 46%, 0.067)
+  );
+  font-size: 3rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 800;
+}
+
+.gray-slow-text {
+  font-size: 1rem;
+  color: hsla(222, 100%, 96%, 0.79);
+  font-weight: 500;
+}
+
+.great-text {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.description-result {
+  text-align: center;
+  font-size: 1rem;
+  color: hsla(222, 100%, 96%, 0.79);
+  font-weight: 500;
+}
+
+.card-points {
+  min-height: 400px;
+  min-width: 290px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.summary-text {
+  font-size: 1.3rem;
+  color: hsl(224, 30%, 27%);
+}
+
+.icon-img {
+  width: 20px;
+}
+
+.reaction-content {
+  background-color: hsla(0, 100%, 67%, 0.115);
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%);
+  margin-right: auto;
+  margin-left: 5px;
+}
+
+.memory-content {
+  background-color: hsla(39, 100%, 56%, 0.115);
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+  margin-right: auto;
+  margin-left: 5px;
+}
+
+.verbal-content {
+  background-color: hsla(166, 100%, 37%, 0.115);
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+  margin-right: auto;
+  margin-left: 5px;
+}
+
+.visual-content {
+  background-color: hsla(234, 85%, 45%, 0.115);
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.visual {
+  color: hsl(234, 85%, 45%);
+  margin-right: auto;
+  margin-left: 5px;
+}
+
+.rate-number {
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+}
+
+.pale-gray {
+  color: hsl(224, 30%, 27%);
+  font-weight: 500;
+  opacity: 60%;
+}
+
+.button-continue {
+  margin-top: 1rem;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  background-image: linear-gradient(
+    hsla(252, 100%, 67%, 0.95),
+    hsl(241, 81%, 54%)
+  );
+  border: #fff;
+  font-weight: 700;
+}
+
+.button-continue:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    hsla(224, 30%, 27%, 0.961),
+    hsla(241, 72%, 46%, 0.21)
+  );
+}
+
+.attribution {
+  padding: 1.5rem;
+  height: 60px;
+  color: hsla(241, 81%, 54%, 0.921);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #161616;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .card-global {
+    flex-direction: column;
+    border-radius: 0px;
+    box-shadow: px 0px 0px lightgray;
+  }
+  .result-card {
+    min-height: 350px;
+    max-width: 400px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .description-result {
+    font-size: 1.1rem;
+  }
+  .card-points {
+    gap: 10px 10px;
+  }
+  .reaction,
+  .memory,
+  .verbal,
+  .visual {
+    margin-right: auto;
+  }
+
+  .attribution {
+    padding: 1rem;
+    font-size: 0.8rem;
+    height: 60px;
+    gap: 20px;
+  }
+}
